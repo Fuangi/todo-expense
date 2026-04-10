@@ -1,13 +1,9 @@
-import React from 'react';
-import Header from './layout/Header';
-import Footer from './layout/Footer';
+import Homepage from './features/Homepage';
 
 function App () {
   return (
     <div>
-     <Header />
-     Body
-     <Footer />
+     <Homepage />
     </div>
   );
 };

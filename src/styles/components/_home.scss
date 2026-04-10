@@ -1,0 +1,68 @@
+@use "../variables" as *;
+.home-head {
+  background-image:
+    linear-gradient(rgba($primaryPink, 0.3), rgba($primaryOrange, 0.2)),
+    url("../../assets/home-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 91vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.home-wrapper {
+  background: rgba($white-100, 0.6);
+  backdrop-filter: blur(0.5rem); // Blurs flowers behind text
+  border: 1px solid $tertiaryOrange;
+  box-shadow: 0 1rem 3.2rem 0 rgba($tertiaryPink, 0.15);
+  padding: 5rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 4rem;
+    color: $tertiaryOrange;
+    padding: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    padding: 0.5rem;
+    color: $black-90;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.5rem;
+    color: $black-90;
+    font-weight: 400;
+    padding: 0.5rem;
+    font-style: oblique;
+  }
+}
+
+.home-buttons {
+  button {
+    border: none;
+    padding: 1.3rem;
+    background-color: $secondaryOrange;
+    color: $primaryPink;
+    margin: 1rem 2rem;
+    border-radius: 0.7rem;
+    width: 20rem;
+    font-weight: bolder;
+    box-shadow: 0.5rem 0.5rem 0.7rem $primaryOrange;
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: none;
+      font-style: oblique;
+      color: $white-100;
+    }
+  }
+}

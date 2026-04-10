@@ -11,12 +11,15 @@
             justify-content: space-between;
             gap: 4rem;
             list-style: none;
+            font-weight: bolder;
+
+           
         }
     }
 }
 
 .homepage-layout{
-    background-color: $primaryOrange;
+    background-color: $secondaryOrange;
     color: $black-90;
     font-weight: 500;
     padding: 2rem;
