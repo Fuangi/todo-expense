@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header () {
   return (
-    <header className='homepage-header'>
+    <header className='homepage-header homepage-layout'>
       <section className="logo">V'sTE</section>
       <div className="header-nav">
         <ul>

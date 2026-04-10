@@ -1,13 +1,9 @@
 @use '../variables' as *;
 
 .homepage-header{
-    background-color: $primaryOrange;
     display: flex;
     justify-content: space-between;
-    color: $black-90;
-    font-weight: 500;
-    padding: 2rem;
-    font-size: 1.5rem;
+    
 
     .header-nav{
         ul{
@@ -17,4 +13,12 @@
             list-style: none;
         }
     }
+}
+
+.homepage-layout{
+    background-color: $primaryOrange;
+    color: $black-90;
+    font-weight: 500;
+    padding: 2rem;
+    font-size: 1.5rem;
 }
