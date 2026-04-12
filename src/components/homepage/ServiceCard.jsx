@@ -1,24 +1,14 @@
 import Button from "../../utils/Button";
-import todoService from "../../assets/service-todo.png";
 
-function ServiceCard() {
+function ServiceCard({ svcName, desc1, desc2, svcImg }) {
   return (
     <div className="service-card">
-      <img src={todoService} alt="To-do List Service" className="service-img" />
+      <img src={svcImg} alt={svcName} className="service-img" />
 
-      <h3>Service Name</h3>
-      <p>
-        A little about it: Lorem ipsum dolor sit amet consectetur adipisicing
-        elit. Numquam, excepturi.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quae!
-        Minima, accusantium. In voluptatem delectus officiis vitae labore soluta
-        itaque repudiandae vel, temporibus amet inventore ipsam fuga veniam
-        consequatur nemo fugiat rem aspernatur ut magnam saepe nam rerum qui
-        ratione!
-      </p>
-      <Button content="Explore this feature" className="service-btn"/>
+      <h3>{svcName}</h3>
+      <p>{desc1}</p>
+      <p>{desc2}</p>
+      <Button content="Explore this feature" className="service-btn" />
     </div>
   );
 }
