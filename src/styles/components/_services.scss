@@ -1,0 +1,45 @@
+@use "../variables" as *;
+
+.our-services {
+  padding: 5rem;
+
+  h1 {
+    font-size: 3rem;
+    font-family: "Dancing SCript", cursive;
+    color: $tertiaryOrange;
+    font-weight: 700;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .services {
+    display: flex;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+}
+
+// Service Card component
+.service-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white-100;
+  padding: 2rem;
+
+  h3 {
+    text-align: center;
+    background-color: $primaryPink;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  p {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    text-align: justify;
+  }
+
+  buttton {
+    width: 50%;
+  }
+}
