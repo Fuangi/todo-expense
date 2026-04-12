@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="home-head">
       <div className="home-wrapper">
-        <h1>Welcome to V's To-do and Expense Tracker</h1>
+        <h1> V's To-do and Expense Tracker</h1>
         <h3>
           Where planning and budgetting coalasce to make you life easier and
           your financial accountability better!
