@@ -1,20 +1,44 @@
-@use '../variables' as *;
+@use "../variables" as *;
 
+.contact-head {
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-size: 3.5rem;
+  color: $tertiaryOrange;
+  font-style: oblique;
+}
 .contact-me {
-  border: 1px solid black;
   display: flex;
+  justify-content: center;
   padding: 5rem;
 
   form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
+    background-color: $secondaryOrange;
+    padding: 2rem;
 
-    input,textarea{
-        width: 25rem;
-        padding: 0.5rem;
-        outline: none;
-        border: 1px solid $tertiaryPink;
+    label {
+      display: inline-block;
+      width: 9rem;
+      align-self: center;
+      justify-self: center;
     }
+
+    input,
+    textarea {
+      width: 25rem;
+      padding: 0.5rem;
+      outline: none;
+      border: 1px solid $tertiaryPink;
+    }
+  }
+
+  .my-details {
+    padding: 2rem;
+    background-color: $white-100;
   }
 }
