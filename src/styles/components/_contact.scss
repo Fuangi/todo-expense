@@ -1,0 +1,20 @@
+@use '../variables' as *;
+
+.contact-me {
+  border: 1px solid black;
+  display: flex;
+  padding: 5rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    input,textarea{
+        width: 25rem;
+        padding: 0.5rem;
+        outline: none;
+        border: 1px solid $tertiaryPink;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import Footer from "../layout/Footer";
 import Home from "../components/homepage/Home";
 import About from "../components/homepage/About";
 import Services from "../components/homepage/Services";
+import Contact from "../components/homepage/Contact";
 
 function Homepage() {
   return (
@@ -12,6 +13,7 @@ function Homepage() {
       <Home />
       <Services />
       <About />
+      <Contact />
 
       <Footer />
     </div>
