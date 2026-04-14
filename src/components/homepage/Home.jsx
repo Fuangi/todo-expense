@@ -3,7 +3,7 @@ import Button from "../../utils/Button";
 
 function Home() {
   return (
-    <div className="home-head">
+    <div className="home-head" id="home">
       <div className="home-wrapper">
         <h1> V's To-do and Expense Tracker</h1>
         <h3>

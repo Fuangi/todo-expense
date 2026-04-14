@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 function Header() {
   return (
@@ -7,19 +6,21 @@ function Header() {
       <section className="logo">V'sTE</section>
 
       <nav className="header-nav">
-        <NavLink to="/" end>
+        <NavHashLink smooth to="/" end>
           Home
-        </NavLink>
-        <NavLink to="/#services" end>
+        </NavHashLink>
+        <NavHashLink smooth to="#services" end>
           Services
-        </NavLink>
-        <NavLink to="/#about" end>
+        </NavHashLink>
+        <NavHashLink smooth to="#about" end>
           About
-        </NavLink>
-        <NavLink to="/#contact" end>
+        </NavHashLink>
+        <NavHashLink smooth to="#contact" end>
           Contact Us
-        </NavLink>
-        <NavLink to="">Join Us</NavLink>
+        </NavHashLink>
+        <NavHashLink smooth to="">
+          Join Us
+        </NavHashLink>
       </nav>
     </header>
   );
