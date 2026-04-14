@@ -13,6 +13,7 @@
   padding: 5rem;
 
   form {
+    width:60rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,25 +21,100 @@
     gap: 2rem;
     background-color: $secondaryOrange;
     padding: 2rem;
+    color: $white-100;
+
+    p{
+      font-size: 1.4rem;
+      text-align: center;
+    }
 
     label {
       display: inline-block;
-      width: 9rem;
-      align-self: center;
-      justify-self: center;
+      width: 11rem;
+      font-weight: 600;
+      font-size: 1.3rem;
     }
 
     input,
     textarea {
       width: 25rem;
-      padding: 0.5rem;
+      padding: 0.7rem;
       outline: none;
-      border: 1px solid $tertiaryPink;
+      border: none;
+      vertical-align: middle;
+    }
+
+    textarea{
+      height: 5rem;
+    }
+
+    button {
+      padding: 1.3rem;
+      outline: none;
+      border: none;
+      border-radius: 0.5rem;
+      background-color: $primaryPink;
+      font-weight: 500;
     }
   }
 
   .my-details {
-    padding: 2rem;
     background-color: $white-100;
+    display: flex;
+    flex-direction: column;
+    width: 40rem;
+
+    .my-contact {
+      display: flex;
+      padding: 1.5rem;
+      align-items: center;
+      flex-grow: 2;
+      gap: 3rem;
+
+      .logo-area {
+        img {
+          width: 15rem;
+          height: 15rem;
+          border: 1px solid $grey-dark;
+          border-radius: 50%;
+        }
+
+        h3 {
+          text-align: center;
+        }
+      }
+
+      .info-area {
+        flex: 1.5;
+        align-self: center;
+        font-size: 1.3rem;
+
+        p {
+          // color: $tertiaryOrange;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      background-color: $secondaryPink;
+      height: 5rem;
+      font-size: 1rem;
+
+      .social-side {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        gap: 15px;
+      }
+
+      .website-side {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
 }
