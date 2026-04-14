@@ -2,7 +2,7 @@ import chat from "../../assets/service-collaboration.png";
 
 function Contact() {
   return (
-    <>
+    <section id="contact">
       <h1 className="contact-head">Get in Touch</h1>
       <div className="contact-me">
         <form className="contact-form">
@@ -49,7 +49,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

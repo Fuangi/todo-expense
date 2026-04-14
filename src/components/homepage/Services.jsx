@@ -36,7 +36,7 @@ const serviceCard = [
 
 function Services() {
   return (
-    <div className="our-services">
+    <section className="our-services" id="services">
       <h1>What do we offer?</h1>
       <div className="services card-grid">
         {serviceCard.map((card) => (
@@ -49,7 +49,7 @@ function Services() {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

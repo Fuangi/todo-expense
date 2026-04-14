@@ -1,11 +1,14 @@
-import Homepage from './features/Homepage';
+import { BrowserRouter } from "react-router-dom";
+import Homepage from "./features/Homepage";
+import HomeRoutes from "./routes/HomeRoutes";
 
-function App () {
+function App() {
   return (
-    <div>
-     <Homepage />
-    </div>
+    <BrowserRouter>
+    <HomeRoutes />
+
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
