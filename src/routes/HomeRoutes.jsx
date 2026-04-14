@@ -7,11 +7,10 @@ import Contact from "../components/homepage/Contact";
 function HomeRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<Homepage />}>
-        <Route path="#services" element={<Services />} />
-        <Route path="#about" element={<About />} />
-        <Route path="#contact" element={<Contact />} />
-      </Route>
+      <Route path="/" element={<Homepage />} />
+      <Route path="#services" element={<Services />} />
+      <Route path="#about" element={<About />} />
+      <Route path="#contact" element={<Contact />} />
     </Routes>
   );
 }

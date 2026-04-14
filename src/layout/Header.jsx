@@ -1,18 +1,26 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Header() {
   return (
     <header className="homepage-header homepage-layout">
       <section className="logo">V'sTE</section>
-      <div className="header-nav">
-        <ul>
-          <li>Home</li>
-          <li>Services</li>
-          <li>About</li>
-          <li>Contact Us</li>
-          <li>Join Us</li>
-        </ul>
-      </div>
+
+      <nav className="header-nav">
+        <NavLink to="/" end>
+          Home
+        </NavLink>
+        <NavLink to="/#services" end>
+          Services
+        </NavLink>
+        <NavLink to="/#about" end>
+          About
+        </NavLink>
+        <NavLink to="/#contact" end>
+          Contact Us
+        </NavLink>
+        <NavLink to="">Join Us</NavLink>
+      </nav>
     </header>
   );
 }
