@@ -1,6 +1,9 @@
+import { useLocation } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 
 function Header() {
+  const location = useLocation();
+
   return (
     <header className="homepage-header homepage-layout">
       <section className="logo">V'sTE</section>
@@ -18,7 +21,7 @@ function Header() {
         <NavHashLink smooth to="#contact" end>
           Contact Us
         </NavHashLink>
-        <NavHashLink smooth to="">
+        <NavHashLink smooth to="auth">
           Join Us
         </NavHashLink>
       </nav>
