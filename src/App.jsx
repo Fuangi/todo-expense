@@ -16,12 +16,12 @@ function App() {
             element={<Modal children={<AuthModal />} prevLocation="/" />}
           >
             <Route index element={<Navigate to="signup" />} />
-            <Route index path="login" element={<Login />} />
+            <Route path="login" element={<Login />} />
             <Route path="signup" element={<Signup />} />{" "}
           </Route>
         </Route>
       </Routes>
-      <HomeRoutes />
+        <HomeRoutes />
     </BrowserRouter>
   );
 }
