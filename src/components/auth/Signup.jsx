@@ -2,8 +2,9 @@ import React from "react";
 
 function Signup() {
   return (
-    <form className="signup-form">
-      <title>Signup</title>
+    <form className="auth-form">
+      <h2>Signup</h2>
+      <p>Please fill your details to start your journey with us</p>
       <div>
         <label htmlFor="name">Name</label>
         <input type="text" name="name" id="name" />
@@ -21,6 +22,10 @@ function Signup() {
         <input type="tel" name="phone" id="phone" />
       </div>
       <div>
+        <label htmlFor="location">Location</label>
+        <input type="tel" name="location" id="location" />
+      </div>
+      <div>
         <label htmlFor="password">Password</label>
         <input type="password" name="password" id="password" />
       </div>
@@ -29,7 +34,7 @@ function Signup() {
         <input type="password" name="conPass" id="conPass" />
       </div>
 
-      <button>Create Account</button>
+      <button className="form-btn">Signup</button>
     </form>
   );
 }

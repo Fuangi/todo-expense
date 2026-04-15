@@ -1,0 +1,31 @@
+@use "../../variables" as *;
+
+.modal-overlay {
+  padding: 1rem 2rem;
+
+  .auth-header {
+    padding: 1rem;
+    background-color: $tertiaryOrange;
+    display: flex;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+
+    a {
+      border: none;
+      text-decoration: none;
+      padding: 0.7rem;
+      width: 50%;
+      text-align: center;
+      font-size: 1.4rem;
+      color: $white-100;
+
+      &.active {
+        text-decoration: underline;
+        text-underline-offset: 0.9rem;
+        text-decoration-thickness: 0.3rem;
+        font-style: oblique;
+        
+      }
+    }
+  }
+}

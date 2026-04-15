@@ -1,15 +1,18 @@
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import { useNavigate, Outlet } from "react-router-dom";
 
 function AuthModal({ children }) {
   const navigate = useNavigate();
+  const [isActive, setIsActive] = useState("");
 
   return (
     <div className="modal-overlay" onClick={() => navigate("/")}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="auth-header">
           {/* These act as tabs to switch between forms */}
-          <button onClick={() => navigate("login")}>Login</button>
-          <button onClick={() => navigate("signup")}>Sign Up</button>
+          <NavLink to="/auth/login">Login</NavLink>
+          <NavLink to="/auth/signup">Sign Up</NavLink>
         </div>
 
         <div className="auth-body">

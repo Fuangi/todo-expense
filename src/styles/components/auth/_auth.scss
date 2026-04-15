@@ -1,0 +1,63 @@
+@use "../../variables" as *;
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  h2 {
+    text-align: center;
+    margin-top: 0.7rem;
+    font-size: 2.5rem;
+    color: $secondaryOrange;
+    font-family: "Dancing Script", cursive;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  div {
+    display: flex;
+    gap: 2rem;
+    padding: 0.7rem;
+    align-items: center;
+    // justify-content: center;
+
+    label {
+      font-size: 1.2rem;
+      width: 10rem;
+      text-align: right;
+      font-weight: 600;
+      color: $black-90;
+
+      &::after {
+        content: ":";
+      }
+    }
+
+    input {
+      border: none;
+      outline: none;
+      padding: 0.5rem;
+      width: 30rem;
+      height: 3.5rem;
+      border: 1px solid $primaryOrange;
+      border-radius: 0.5rem;
+      background: $primaryPink;
+      color: $black-90;
+    }
+  }
+}
+
+.form-btn {
+  margin-top: 4rem;
+  padding: 0.9rem;
+  width: 15rem;
+  border: 1px solid;
+  border-radius: 0.7rem;
+  background-color: $secondaryOrange;
+  color: $white-100;
+  font-weight: 700;
+}

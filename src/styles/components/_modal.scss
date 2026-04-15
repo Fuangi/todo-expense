@@ -21,16 +21,33 @@
 }
 
 .modal-body {
-  background: white;
-  padding: 2rem;
-  border-radius: 20px;
+  background: $primaryPink;
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 65rem;
   position: relative;
-  max-width: 900px;
+  max-width: 50rem;
   width: 90%;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2rem 50rem rgba(0, 0, 0, 0.3);
 
   // Animation for a "Pop" effect
   animation: modalFadeIn 0.3s ease-out;
+
+  .close-modal {
+    width: 2rem;
+    margin-left: auto;
+    padding: 0.5rem;
+
+    button {
+      background: none;
+      border: none;
+      outline: none;
+      font-size: 2rem;
+      font-weight: 900;
+      color: $tertiaryPink !important;
+      cursor: pointer;
+    }
+  }
 }
 
 @keyframes modalFadeIn {
