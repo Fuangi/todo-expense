@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Button from "../../utils/Button";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Home() {
   return (
@@ -15,9 +17,9 @@ function Home() {
           tomorrow
         </p>
 
-        <div className="home-buttons">
-          <Button content="Know more" />
-          <Button content="Join us" />
+        <div className="home-links">
+          <HashLink to="#about">Know More </HashLink>
+          <Link to="/auth">Join Us </Link>
         </div>
       </div>
     </div>
