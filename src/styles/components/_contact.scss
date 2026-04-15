@@ -13,7 +13,7 @@
   padding: 5rem;
 
   form {
-    width:60rem;
+    width: 60rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,7 +23,7 @@
     padding: 2rem;
     color: $white-100;
 
-    p{
+    p {
       font-size: 1.4rem;
       text-align: center;
     }
@@ -44,7 +44,7 @@
       vertical-align: middle;
     }
 
-    textarea{
+    textarea {
       height: 5rem;
     }
 
@@ -114,6 +114,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+    }
+  }
+}
+
+// For responsiveness
+@media (max-width: 60rem) {
+  .contact-me {
+    flex-wrap: wrap;
+
+    form {
+      label {
+        width: 10rem;
+      }
+
+      input,
+      textarea {
+        width: 25rem;
       }
     }
   }

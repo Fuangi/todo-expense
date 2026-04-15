@@ -38,7 +38,7 @@ function Services() {
   return (
     <section className="our-services" id="services">
       <h1>What do we offer?</h1>
-      <div className="services card-grid">
+      <div className="services ">
         {serviceCard.map((card) => (
           <ServiceCard
             key={card.svcId}

@@ -36,3 +36,10 @@
     }
   }
 }
+
+// For responsiveness
+@media (max-width: 60rem) {
+  .about-us{
+    flex-wrap: wrap;
+  }
+}
