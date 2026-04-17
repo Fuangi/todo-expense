@@ -6,6 +6,7 @@
   font-size: 3.5rem;
   color: $tertiaryOrange;
   font-style: oblique;
+  padding-top: 2rem;
 }
 .contact-me {
   display: flex;
@@ -88,10 +89,6 @@
         flex: 1.5;
         align-self: center;
         font-size: 1.3rem;
-
-        p {
-          // color: $tertiaryOrange;
-        }
       }
     }
 
@@ -126,7 +123,6 @@
     padding: 1.7rem;
 
     form {
-
       label {
         width: 7rem;
       }
