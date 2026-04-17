@@ -60,3 +60,14 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 60rem) {
+  .modal-background {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .modal-body {
+    width: 100%;
+    top: 0;
+  }
+}
