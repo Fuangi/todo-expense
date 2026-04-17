@@ -17,19 +17,19 @@ function Header() {
       <div className="logo">V'sTE</div>
 
       <nav className="header-nav" ref={navRef}>
-        <NavHashLink smooth to="/" end>
+        <NavHashLink smooth to="/" end onClick={toggleMenu}>
           Home
         </NavHashLink>
-        <NavHashLink smooth to="#services" end>
+        <NavHashLink smooth to="#services" end onClick={toggleMenu}>
           Services
         </NavHashLink>
-        <NavHashLink smooth to="#about" end>
+        <NavHashLink smooth to="#about" end onClick={toggleMenu}>
           About
         </NavHashLink>
-        <NavHashLink smooth to="#contact" end>
+        <NavHashLink smooth to="#contact" end  onClick={toggleMenu}>
           Contact Us
         </NavHashLink>
-        <NavHashLink smooth to="auth">
+        <NavHashLink smooth to="auth" onClick={toggleMenu}>
           Join Us
         </NavHashLink>
 
