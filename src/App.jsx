@@ -5,6 +5,7 @@ import AuthModal from "./components/auth/AuthModal";
 import Homepage from "./features/Homepage";
 import Login from "./components/auth/Login";
 import Signup from "./components/auth/Signup";
+import Home from "./components/homepage/Home";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           </Route>
         </Route>
       </Routes>
-        <HomeRoutes />
+      <HomeRoutes />
     </BrowserRouter>
   );
 }

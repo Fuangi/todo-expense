@@ -123,16 +123,22 @@
 @media (max-width: 60rem) {
   .contact-me {
     flex-wrap: wrap;
+    padding: 1.7rem;
 
     form {
+
       label {
-        width: 10rem;
+        width: 7rem;
       }
 
       input,
       textarea {
         width: 25rem;
       }
+    }
+
+    .my-details {
+      width: 40rem;
     }
   }
 }
