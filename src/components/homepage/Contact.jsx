@@ -1,30 +1,12 @@
 import chat from "../../assets/service-collaboration.png";
+import ContactForm from "../forms/ContactForm";
 
 function Contact() {
   return (
     <section id="contact">
       <h1 className="contact-head">Get in Touch</h1>
       <div className="contact-me">
-        <form className="contact-form">
-          <p>Have any questions, inquiries or suggestions about our services? Fill in this form to share them with us!</p>
-          <div>
-            <label htmlFor="name">Your Name:</label>
-            <input type="text" name="name" id="name" />
-          </div>
-          <div>
-            <label htmlFor="email">Your Email:</label>
-            <input type="text" name="email" id="name" />
-          </div>
-          <div>
-            <label htmlFor="message">Your message:</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Write something here"
-            ></textarea>
-          </div>
-          <button>Send Message</button>
-        </form>
+        <ContactForm />
         <div className="my-details">
           <div className="my-contact">
             <div className="logo-area">
