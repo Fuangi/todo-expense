@@ -9,14 +9,33 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [confirmPass, setConfirmPass] = useState("");
 
+  const PASSWORD_REGEX = /^(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/;
+
+  const validatePassword = (password) => {
+    if (PASSWORD_REGEX.test(password)) {
+      alert("Password is valid!");
+      return true;
+    } else {
+      alert(
+        "Password must contain atleast 1 number, 1 uppercase and a special character",
+      );
+      return false;
+    }
+  };
+
   function handleSignup(e) {
     e.preventDefault();
 
     if (username.length < 3)
       return alert("Username must be at least 3 characters");
-    if (confirmPass !== password) return alert("Passwords dont't match");
-    if (password.length < 8)
-      return alert("Password length must be greater than 8");
+
+    if (confirmPass !== password) return alert("Passwords do not match");
+    else if (!PASSWORD_REGEX.test(password)) {
+      alert(
+        "Password must be at least 8 characters and include an uppercase letter, a number, and a symbol.",
+      );
+      return; // Stop the form from submitting
+    }
 
     const signupDetails = [
       { name, username, email, phone, location, password, confirmPass },
