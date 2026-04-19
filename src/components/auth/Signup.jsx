@@ -9,8 +9,25 @@ function Signup() {
   const [password, setPassword] = useState("");
   const [confirmPass, setConfirmPass] = useState("");
 
+  function handleSignup(e) {
+    e.preventDefault();
+
+    const signupDetails = [
+      { name, username, email, phone, location, password, confirmPass },
+    ];
+    console.log(signupDetails);
+
+    setName("");
+    setUsername("");
+    setEmail("");
+    setPhone("");
+    setLocation("");
+    setPassword("");
+    setConfirmPass("");
+  }
+
   return (
-    <form className="auth-form">
+    <form className="auth-form" onSubmit={handleSignup}>
       <h2>Signup</h2>
       <p>Please fill your details to start your journey with us</p>
       <div>
