@@ -23,6 +23,7 @@ function Login() {
           type="email"
           name="email"
           id="email"
+          required
           value={loginEmail}
           onChange={(e) => setLoginEmail(e.target.value)}
         />
@@ -33,6 +34,7 @@ function Login() {
           type="password"
           name="password"
           id="password"
+          required
           value={loginPassword}
           onChange={(e) => setLoginPassword(e.target.value)}
         />

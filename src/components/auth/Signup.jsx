@@ -12,6 +12,12 @@ function Signup() {
   function handleSignup(e) {
     e.preventDefault();
 
+    if (username.length < 3)
+      return alert("Username must be at least 3 characters");
+    if (confirmPass !== password) return alert("Passwords dont't match");
+    if (password.length < 8)
+      return alert("Password length must be greater than 8");
+
     const signupDetails = [
       { name, username, email, phone, location, password, confirmPass },
     ];
@@ -38,6 +44,7 @@ function Signup() {
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          required
         />
       </div>
       <div>
@@ -46,6 +53,7 @@ function Signup() {
           type="text"
           name="username"
           id="username"
+          required
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
@@ -56,6 +64,7 @@ function Signup() {
           type="email"
           name="email"
           id="email"
+          required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
@@ -66,6 +75,7 @@ function Signup() {
           type="tel"
           name="phone"
           id="phone"
+          required
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
         />
@@ -76,6 +86,7 @@ function Signup() {
           type="tel"
           name="location"
           id="location"
+          required
           value={location}
           onChange={(e) => setLocation(e.target.value)}
         />
@@ -86,6 +97,7 @@ function Signup() {
           type="password"
           name="password"
           id="password"
+          required
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
@@ -96,6 +108,7 @@ function Signup() {
           type="password"
           name="conPass"
           id="conPass"
+          required
           value={confirmPass}
           onChange={(e) => setConfirmPass(e.target.value)}
         />
