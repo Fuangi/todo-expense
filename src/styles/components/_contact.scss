@@ -102,8 +102,12 @@
         flex: 1;
         display: flex;
         align-items: center;
-        padding-left: 40px;
-        gap: 15px;
+        padding-left: 2.5rem;
+        gap: 1.3rem;
+
+        p {
+          font-weight: 500;
+        }
       }
 
       .website-side {
@@ -111,6 +115,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .social-link {
+        font-size: 1.5rem;
+        color: $tertiaryPink;
       }
     }
   }

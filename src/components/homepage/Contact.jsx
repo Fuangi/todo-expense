@@ -1,5 +1,8 @@
+import { FaLink, FaLinkedin } from "react-icons/fa";
 import chat from "../../assets/service-collaboration.png";
 import ContactForm from "../forms/ContactForm";
+import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -21,12 +24,21 @@ function Contact() {
           </div>
           <div className="socials">
             <div className="social-side">
-              <p>LinkedIn</p>
-              <p>Instagram</p>
-              <p>Facebook</p>
+              <p>Follow me on social:</p>
+              <Link to="">
+                <FaLinkedin className="social-link" />
+              </Link>
+              <Link to="">
+                <FaInstagram className="social-link" />
+              </Link>
+              <Link to="">
+                <FaFacebook className="social-link" />
+              </Link>
             </div>
             <div className="website-side">
-              <p>My website</p>
+              <Link to="">
+                <FaLink className="social-link" /> My website
+              </Link>
             </div>
           </div>
         </div>
