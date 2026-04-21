@@ -9,27 +9,27 @@ const serviceCard = [
     svcId: 0o1,
     svcName: "Todo List",
     desc1:
-      "A little about it: Lorem ipsum dolor sit amet consectetur adipisicingelit. Numquam, excepturi.",
+      "Stay on top of your daily tasks with a smart, intuitive list manager designed to reduce mental clutter. Whether it's a quick grocery run or a  work milestone, our system helps you categorize and conquer your day. ",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quae! Minima, accusantium. In voluptatem delectus officiis vitae labore solutaitaque repudiandae vel, temporibus amet inventore ipsam fuga veniam consequatur nemo fugiat rem aspernatur ut magnam saepe nam rerum qui ratione!",
+      "The platform streamlines your workflow by syncronizing your lists across all devices in real-time. With built-in priority tagging and deadline reminders, we ensure that nothing falls through the cracks, allowing you to focus on execution rather than just organization",
     svcImg: todoService,
   },
   {
     svcId: 0o2,
     svcName: "Expense Tracker",
     desc1:
-      "A little about it: Lorem ipsum dolor sit amet consectetur adipisicingelit. Numquam, excepturi",
+      "Financial clarity is the first step toward freedom. Our expense tracker allows you to log your spending on the go, categorize your purchases, and visualize where your money is actually going every month",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quae! Minima, accusantium. In voluptatem delectus officiis vitae labore solutaitaque repudiandae vel, temporibus amet inventore ipsam fuga veniam consequatur nemo fugiat rem aspernatur ut magnam saepe nam rerum qui ratione!",
+      "We take the 'manual' out of tracking. The platform provides automated spending reports and budget alerts that notify you when you're nearing your limits. By transforming raw numbers into easy-to-read charts, we help you make informed decisions to grow your savings effortlessly.",
     svcImg: expenseService,
   },
   {
     svcId: 0o3,
     svcName: "Chat and Collaborate",
     desc1:
-      "A little about it: Lorem ipsum dolor sit amet consectetur adipisicingelit. Numquam, excepturi",
+      "Great ideas rarely happen in isolation. Our collaboration suite bridges the gap between communication and action, providing a shared space where teams can brainstorm, share files, and keep projects moving forward",
     desc2:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, quae! Minima, accusantium. In voluptatem delectus officiis vitae labore solutaitaque repudiandae vel, temporibus amet inventore ipsam fuga veniam consequatur nemo fugiat rem aspernatur ut magnam saepe nam rerum qui ratione!",
+      "The platform eliminates fatigue by integrating your chats directly with your tasks. You can assign to-dos within a message and share documents securely. We provide a centralized hub that ensures everyone no matter where they are stays aligned on the same vision",
     svcImg: collaborateService,
   },
 ];
