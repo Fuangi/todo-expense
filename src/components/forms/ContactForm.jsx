@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Alerts from "../mui/Alerts";
 
 function ContactForm() {
   const [contactName, setContactName] = useState("");
@@ -52,6 +53,7 @@ function ContactForm() {
         />
       </div>
       <button>Send Message</button>
+      {/* <Alerts /> */}
     </form>
   );
 }

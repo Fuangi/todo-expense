@@ -1,7 +1,7 @@
-import { FaLink, FaLinkedin } from "react-icons/fa";
+import { FaEnvelope, FaLink, FaLinkedin, FaPhone } from "react-icons/fa";
 import chat from "../../assets/service-collaboration.png";
 import ContactForm from "../forms/ContactForm";
-import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaLocationPin } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 function Contact() {
@@ -17,9 +17,9 @@ function Contact() {
               <h3>Vanessa Fuangi</h3>
             </div>
             <div className="info-area">
-              <p>vanessafuangi@gmail.com</p>
-              <p>+237682866419</p>
-              <p>Mayor Street, Buea</p>
+              <p><FaEnvelope className="info-icon"/> vanessafuangi@gmail.com</p>
+              <p><FaPhone className="info-icon"/> +237682866419</p>
+              <p> <FaLocationPin className="info-icon"/> Mayor Street, Buea</p>
             </div>
           </div>
           <div className="socials">

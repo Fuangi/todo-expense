@@ -67,10 +67,10 @@
 
     .my-contact {
       display: flex;
-      padding: 1.5rem;
+      padding: 1rem;
       align-items: center;
       flex-grow: 2;
-      gap: 3rem;
+      gap: 2rem;
 
       .logo-area {
         img {
@@ -82,6 +82,9 @@
 
         h3 {
           text-align: center;
+          font-size: 1.8rem;
+          color: $tertiaryOrange;
+          font-family: "Dancing Script", cursive;
         }
       }
 
@@ -89,6 +92,18 @@
         flex: 1.5;
         align-self: center;
         font-size: 1.3rem;
+
+        p{
+          font-size: 1.4rem;
+          display: flex;
+          gap: 0.7rem;
+          align-items: center;
+          padding: 1rem 0.3rem;
+        }
+
+        .info-icon{
+          color: $tertiaryPink;
+        }
       }
     }
 
