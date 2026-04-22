@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+
+.dash-topnav {
+  border: 1px solid black;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
