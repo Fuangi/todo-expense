@@ -6,6 +6,7 @@ import Homepage from "./features/Homepage";
 import Login from "./components/auth/Login";
 import Signup from "./components/auth/Signup";
 import Home from "./components/homepage/Home";
+import DashboardRoutes from "./routes/DashboardRoutes";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </Route>
       </Routes>
       <HomeRoutes />
+      <DashboardRoutes />
     </BrowserRouter>
   );
 }
