@@ -1,7 +1,7 @@
 import React from 'react';
 import DashSideNav from '../components/dashboard/DashSideNav';
 
-function Dashboard () {
+function DashLayout () {
   return (
     <div>
       <DashSideNav />
@@ -9,4 +9,4 @@ function Dashboard () {
   );
 };
 
-export default Dashboard;
+export default DashLayout;

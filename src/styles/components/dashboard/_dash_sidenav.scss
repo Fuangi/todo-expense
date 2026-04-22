@@ -1,0 +1,10 @@
+@use "../../variables" as *;
+
+.dash-side-nav{
+    border: 1px solid red;
+    height: 100vh;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
