@@ -1,17 +1,19 @@
 import React from 'react';
+import { FaBell, FaCalendar, FaSearch } from 'react-icons/fa';
 
 function DashTopNav () {
+    const date = new Date()
   return (
-    <div className='dash-topnav'>
+    <header className='dash-topnav'>
         <h4>Hello Van👋</h4>
         <ul>
-            <li>Search</li>
-            <li>Notification</li>
-            <li>Date</li>
+            <li><FaSearch /></li>
+            <li><FaBell /></li>
+            <li><FaCalendar /> {date.toDateString()}</li>
             <li>Profile</li>
         </ul>
       
-    </div>
+    </header>
   );
 };
 

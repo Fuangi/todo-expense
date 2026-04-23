@@ -1,19 +1,50 @@
 import React from "react";
+import { FaDashcube, FaHome, FaList, FaTrash } from "react-icons/fa";
+import { FaMessage } from "react-icons/fa6";
+import { GoGraph } from "react-icons/go";
+import { LuLogOut } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 function DashSideNav() {
   return (
-    <div className="dash-side-nav">
+    <aside className="dash-side-nav">
       <nav className="navbar">
-        <li>Dashboard</li>
-        <li>Todos</li>
-        <li>Expense</li>
-        <li>Chats</li>
-        <li>Trash</li>
+        <ul>
+          <li>
+            <Link>
+              <FaHome />Home
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <FaList /> Todos
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <GoGraph /> Expenses
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <FaMessage /> Chats
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <FaTrash /> Trash
+            </Link>
+          </li>
+        </ul>
       </nav>
       <div className="logout-btn">
-        <p>Logout</p>
+        <p>
+          <Link>
+            <LuLogOut /> Logout
+          </Link>
+        </p>
       </div>
-    </div>
+    </aside>
   );
 }
 
