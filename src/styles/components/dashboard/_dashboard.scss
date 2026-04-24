@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+.dashboard {
+  display: flex;
+  gap: 3rem;
+
+  .left-container {
+    width: 70%;
+    border: 1px solid red;
+    height: 94vh;
+  }
+  .right-container {
+    width: 30%;
+    border: 1px dashed black;
+    height: 94vh;
+  }
+}
