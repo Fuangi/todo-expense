@@ -70,9 +70,10 @@
       justify-content: space-between;
       font-size: 1.7rem;
       font-weight: 600;
+      margin-bottom: 1.5rem;
     }
 
-    div {
+    .analysis-card {
       background-color: $white-90;
       border-radius: 1rem;
       width: 35rem;
@@ -100,6 +101,37 @@
     &-graph {
       width: 50rem !important;
       background-color: $primaryPink !important;
+    }
+
+    .tasks-mini-view {
+      span {
+        font-size: 1.3rem;
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+        color: $tertiaryPink;
+        text-decoration-color: $tertiaryPink;
+      }
+      .mini-task {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 01rem;
+        // border-bottom: 1px solid $grey-dark;
+
+        .category-icon {
+          font-size: 2.5rem;
+          color: $tertiaryPink;
+        }
+
+        h4 {
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+        p {
+          font-size: 1.1rem;
+          margin-bottom: 0.1rem;
+        }
+      }
     }
   }
 }

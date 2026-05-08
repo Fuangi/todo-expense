@@ -2,9 +2,10 @@ import React from "react";
 import DashSideNav from "../components/dashboard/DashSideNav";
 import DashLayout from "../layout/DashLayout";
 import { BsArrowUpRightCircle } from "react-icons/bs";
-import { RxCaretUp } from "react-icons/rx";
+import { RxAvatar, RxCaretUp } from "react-icons/rx";
 import { taskSummaryData } from "../assets/dashboardData";
 import DashTaskSummaryCard from "../components/dashboard/DashTaskSummaryCard";
+import DashTaskMiniView from "../components/dashboard/DashTaskMiniView";
 
 function Dashboard() {
   return (
@@ -23,7 +24,7 @@ function Dashboard() {
           </div>
         </div>
 
-        <div className="task-summary">
+        <div className="task-summary ">
           {taskSummaryData.map((summary, i) => (
             <DashTaskSummaryCard
               className={`${i === 0 && "dashboard-main"}`}
@@ -37,10 +38,10 @@ function Dashboard() {
         </div>
 
         <div className="task-analysis">
-          <div className="task-analysis-graph">
+          <div className="task-analysis-graph analysis-card">
             <h3>Task analysis</h3>
           </div>
-          <div className="reminders intro-btns">
+          <div className="reminders intro-btns analysis-card">
             <h3>Reminders</h3>
             <h4>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
@@ -49,21 +50,18 @@ function Dashboard() {
             <p>Mon @ 07:00 AM - 11:00 AM</p>
             <button className="dashboard-main">Start Task</button>
           </div>
-          <div className="tasks-mini-view">
+          <div className="tasks-mini-view analysis-card">
             <h3>
               Tasks <span>+ New</span>
             </h3>
-            <p>
-              <span>icon</span> Task Title
-            </p>
-            <p>category</p>
+            <DashTaskMiniView />
+            <DashTaskMiniView />
+            <DashTaskMiniView />
+            <DashTaskMiniView />
           </div>
         </div>
 
-        <div className="expense-chat-summary">
-          <div className="chats"> Your chats</div>
-        </div>
-        <div className="expense-graph">Your Collaborators</div>
+        <div className="expense-chat-summary">Coming Soon</div>
       </section>
     </DashLayout>
   );
