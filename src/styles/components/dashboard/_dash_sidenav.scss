@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: $tertiaryOrange;
+  background-color: #f8f8f8;
 
   .navbar {
     font-size: 1.3rem;
@@ -23,7 +23,6 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
-        color: $white-100;
       }
     }
   }
@@ -37,7 +36,6 @@
       display: flex;
       align-items: center;
       gap: 0.5rem;
-      color: $white-100;
     }
   }
 }

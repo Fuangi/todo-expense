@@ -8,11 +8,15 @@ import { Link } from "react-router-dom";
 function DashSideNav() {
   return (
     <aside className="dash-side-nav">
+      <div className="side-logo">
+        <h3>V'sTE</h3>
+      </div>
       <nav className="navbar">
         <ul>
           <li>
             <Link>
-              <FaHome />Home
+              <FaHome />
+              Home
             </Link>
           </li>
           <li>
