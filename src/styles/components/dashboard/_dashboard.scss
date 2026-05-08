@@ -28,18 +28,6 @@
     }
   }
 
-  // The main contents to be highlighted with orange bg
-  &-main {
-    background-color: $tertiaryOrange !important;
-    color: $white-100;
-
-    p {
-      span {
-        border-color: $white-100 !important;
-      }
-    }
-  }
-
   // The top section of the dashboard
   .task-summary {
     display: flex;
@@ -70,12 +58,25 @@
 
       p {
         font-size: 1.3rem;
+        color: $tertiaryPink;
 
         span {
           padding: 0 0.3rem;
-          border: 1px solid $black-100;
+          border: 1px solid $tertiaryPink;
         }
       }
+    }
+  }
+}
+// The main contents to be highlighted with orange bg
+.dashboard-main {
+  background-color: $tertiaryOrange !important;
+  color: $white-100 !important;
+
+  p {
+    color: $white-100 !important;
+    span {
+      border-color: $white-100 !important;
     }
   }
 }
