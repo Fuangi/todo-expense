@@ -22,6 +22,7 @@ function Dashboard() {
             <button>Add Expense</button>
           </div>
         </div>
+
         <div className="task-summary">
           {taskSummaryData.map((summary, i) => (
             <DashTaskSummaryCard
@@ -34,17 +35,31 @@ function Dashboard() {
             />
           ))}
         </div>
+
         <div className="task-analysis">
           <div className="task-analysis-graph">
             <h3>Task analysis</h3>
           </div>
-          <div className="reminders">
+          <div className="reminders intro-btns">
             <h3>Reminders</h3>
+            <h4>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis,
+              accusamus!
+            </h4>
+            <p>Mon @ 07:00 AM - 11:00 AM</p>
+            <button className="dashboard-main">Start Task</button>
           </div>
           <div className="tasks-mini-view">
-            <h3>Tasks</h3>
+            <h3>
+              Tasks <span>+ New</span>
+            </h3>
+            <p>
+              <span>icon</span> Task Title
+            </p>
+            <p>category</p>
           </div>
         </div>
+
         <div className="expense-chat-summary">
           <div className="chats"> Your chats</div>
         </div>

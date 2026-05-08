@@ -2,6 +2,7 @@ import React from "react";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import { RxCaretDown, RxCaretUp } from "react-icons/rx";
 
+// Styled in dashboard.scss under .task-summary
 function DashTaskSummaryCard({
   summaryName,
   qty,

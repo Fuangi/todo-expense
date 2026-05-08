@@ -17,15 +17,6 @@
     p {
       font-size: 1.5rem;
     }
-
-    .intro-btns {
-      button {
-        padding: 1rem;
-        margin: 0 0.5rem;
-        border-radius: 1.5rem;
-        border: 1px solid $tertiaryOrange;
-      }
-    }
   }
 
   // The top section of the dashboard
@@ -67,6 +58,50 @@
       }
     }
   }
+
+  .task-analysis {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    h3 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    div {
+      background-color: $white-90;
+      border-radius: 1rem;
+      width: 35rem;
+      padding: 1.5rem;
+    }
+
+    .reminders {
+      h3 {
+        border-bottom: 1px solid $grey-dark;
+      }
+
+      h4 {
+        font-size: 1.6rem;
+        color: $tertiaryOrange;
+        margin-top: 0.7rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        color: $grey-dark;
+        margin: 0.5rem 0;
+      }
+    }
+
+    &-graph {
+      width: 50rem !important;
+      background-color: $primaryPink !important;
+    }
+  }
 }
 // The main contents to be highlighted with orange bg
 .dashboard-main {
@@ -78,5 +113,15 @@
     span {
       border-color: $white-100 !important;
     }
+  }
+}
+
+// All buttons that uses same styling
+.intro-btns {
+  button {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid $tertiaryOrange;
   }
 }
