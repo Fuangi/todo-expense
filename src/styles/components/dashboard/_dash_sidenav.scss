@@ -13,9 +13,23 @@
   top: 0;
   left: 0;
 
-  .navbar {
+  h3 {
+    font-size: 2rem;
+    margin: 2rem;
+    font-weight: 500;
+    color: $tertiaryPink;
+  }
+
+  .navbar,
+  .logout-btn {
     font-size: 1.3rem;
     padding: 2rem;
+
+    h4 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: $tertiaryPink;
+    }
 
     li {
       list-style-type: none;
@@ -25,20 +39,21 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
+        color: $black-90;
+
+        &:active,
+        .active {
+          color: $tertiaryPink;
+        }
       }
     }
   }
 
-  .logout-btn {
-    padding: 1rem;
-    font-size: 1.3rem;
+  p {
+    font-size: 1.1rem;
 
-    a {
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
+    color: $tertiaryPink;
+    margin: 1rem;
   }
 }

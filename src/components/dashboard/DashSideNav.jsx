@@ -2,8 +2,10 @@ import React from "react";
 import { FaDashcube, FaHome, FaList, FaTrash } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { GoGraph } from "react-icons/go";
-import { LuLogOut } from "react-icons/lu";
+import { LuLogOut, LuSettings } from "react-icons/lu";
 import { Link } from "react-router-dom";
+
+const date = new Date();
 
 function DashSideNav() {
   return (
@@ -12,9 +14,10 @@ function DashSideNav() {
         <h3>V'sTE</h3>
       </div>
       <nav className="navbar">
+        <h4>Menu</h4>
         <ul>
           <li>
-            <Link>
+            <Link className="active">
               <FaHome />
               Home
             </Link>
@@ -34,20 +37,30 @@ function DashSideNav() {
               <FaMessage /> Chats
             </Link>
           </li>
+        </ul>
+      </nav>
+      <div className="logout-btn">
+        <h4>General</h4>
+        <ul>
+          <li>
+            <Link>
+              <LuLogOut /> Logout
+            </Link>
+          </li>
+          <li>
+            <Link>
+              <LuSettings /> Settings
+            </Link>
+          </li>
           <li>
             <Link>
               <FaTrash /> Trash
             </Link>
           </li>
         </ul>
-      </nav>
-      <div className="logout-btn">
-        <p>
-          <Link>
-            <LuLogOut /> Logout
-          </Link>
-        </p>
       </div>
+
+      <p>&copy; {date.getFullYear()} by Vanessa Fuangi</p>
     </aside>
   );
 }
