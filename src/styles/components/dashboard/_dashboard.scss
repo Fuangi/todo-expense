@@ -1,0 +1,217 @@
+@use "../../variables" as *;
+.dashboard {
+  padding: 1.5rem;
+
+  .dash-intro {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 2rem;
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 0 0.2rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  // The top section of the dashboard
+  .task-summary {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+
+    div {
+      padding: 1.5rem;
+      border-radius: 1rem;
+      width: 30rem;
+      background-color: $white-90;
+
+      h4 {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.7rem;
+        font-weight: 600;
+
+        span {
+          font-size: 2rem;
+        }
+      }
+
+      h3 {
+        font-size: 3rem;
+        margin: 0.5rem 0;
+      }
+
+      p {
+        font-size: 1.3rem;
+        color: $tertiaryPink;
+
+        span {
+          padding: 0 0.3rem;
+          border: 1px solid $tertiaryPink;
+        }
+      }
+    }
+  }
+
+  .task-analysis {
+    display: flex;
+    gap: 4rem;
+    justify-content: space-between;
+    margin-top: 2rem;
+    // align-items: flex-;
+
+    h3 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .analysis-card {
+      background-color: $white-90;
+      border-radius: 1rem;
+      width: 35rem;
+      padding: 1.5rem;
+    }
+
+    .reminders {
+      h3 {
+        border-bottom: 1px solid $grey-dark;
+      }
+
+      h4 {
+        font-size: 1.6rem;
+        color: $tertiaryOrange;
+        margin-top: 0.7rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        color: $grey-dark;
+        margin: 0.5rem 0;
+      }
+    }
+
+    &-graph {
+      width: 50rem !important;
+      background-color: $primaryPink !important;
+    }
+
+    .tasks-mini-view {
+      span {
+        font-size: 1.3rem;
+        text-decoration: underline;
+        text-underline-offset: 0.3rem;
+        color: $tertiaryPink;
+        text-decoration-color: $tertiaryPink;
+      }
+      .mini-task {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-top: 01rem;
+        // border-bottom: 1px solid $grey-dark;
+
+        .category-icon {
+          font-size: 2.5rem;
+          color: $tertiaryPink;
+        }
+
+        h4 {
+          font-size: 1.3rem;
+          font-weight: 500;
+        }
+        p {
+          font-size: 1.1rem;
+          margin-bottom: 0.1rem;
+        }
+      }
+    }
+  }
+
+  .expense-chat-summary {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .chats-mini-view {
+      width: 40rem;
+      background-color: $grey-light;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+
+    .expense-graph {
+      width: 60rem;
+      background-color: $primaryPink;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+
+    .time-summary {
+      width: 20rem;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+  }
+}
+// The main contents to be highlighted with orange bg
+.dashboard-main {
+  background-color: $tertiaryOrange !important;
+  color: $white-100 !important;
+
+  p {
+    color: $white-100 !important;
+    span {
+      border-color: $white-100 !important;
+    }
+  }
+}
+
+// All buttons that uses same styling
+.intro-btns {
+  button {
+    padding: 1rem;
+    margin: 0 0.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid $tertiaryOrange;
+  }
+}
+
+// The mini tasks and mini chats on the dashboard
+.mini-task {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 01rem;
+  // border-bottom: 1px solid $grey-dark;
+
+  .category-icon {
+    font-size: 2.5rem;
+    color: $tertiaryPink;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
+  }
+}
