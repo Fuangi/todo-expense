@@ -57,11 +57,20 @@ function Dashboard() {
             <DashTaskMiniView />
             <DashTaskMiniView />
             <DashTaskMiniView />
-            <DashTaskMiniView />
           </div>
         </div>
 
-        <div className="expense-chat-summary">Coming Soon</div>
+        <div className="expense-chat-summary">
+          <div className="chats-mini-view">
+            <h3>Chats</h3>
+            <div className="mini-chats">
+              <DashTaskMiniView />
+              <DashTaskMiniView />
+              <DashTaskMiniView />
+              <DashTaskMiniView />
+            </div>
+          </div>
+        </div>
       </section>
     </DashLayout>
   );

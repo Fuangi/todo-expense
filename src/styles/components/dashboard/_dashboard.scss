@@ -134,6 +134,25 @@
       }
     }
   }
+
+  .expense-chat-summary {
+    margin-top: 2rem;
+
+    h3 {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.7rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+
+    .chats-mini-view {
+      width: 35rem;
+      background-color: $grey-light;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+  }
 }
 // The main contents to be highlighted with orange bg
 .dashboard-main {
@@ -155,5 +174,28 @@
     margin: 0 0.5rem;
     border-radius: 1.5rem;
     border: 1px solid $tertiaryOrange;
+  }
+}
+
+// The mini tasks and mini chats on the dashboard
+.mini-task {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 01rem;
+  // border-bottom: 1px solid $grey-dark;
+
+  .category-icon {
+    font-size: 2.5rem;
+    color: $tertiaryPink;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 0.1rem;
   }
 }
