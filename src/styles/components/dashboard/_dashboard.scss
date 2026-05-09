@@ -64,6 +64,7 @@
     gap: 4rem;
     justify-content: space-between;
     margin-top: 2rem;
+    // align-items: flex-;
 
     h3 {
       display: flex;
@@ -137,6 +138,8 @@
 
   .expense-chat-summary {
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
 
     h3 {
       display: flex;
@@ -147,8 +150,21 @@
     }
 
     .chats-mini-view {
-      width: 35rem;
+      width: 40rem;
       background-color: $grey-light;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+
+    .expense-graph {
+      width: 60rem;
+      background-color: $primaryPink;
+      padding: 2rem;
+      border-radius: 2rem;
+    }
+
+    .time-summary {
+      width: 20rem;
       padding: 2rem;
       border-radius: 2rem;
     }

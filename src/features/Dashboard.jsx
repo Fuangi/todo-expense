@@ -67,8 +67,13 @@ function Dashboard() {
               <DashTaskMiniView />
               <DashTaskMiniView />
               <DashTaskMiniView />
-              <DashTaskMiniView />
             </div>
+          </div>
+          <div className="expense-graph">
+            <h3>Your Expenses</h3>
+          </div>
+          <div className="time-summary dashboard-main">
+            <h3>Total Time</h3>
           </div>
         </div>
       </section>
