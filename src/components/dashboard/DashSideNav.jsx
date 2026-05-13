@@ -3,7 +3,7 @@ import { FaDashcube, FaHome, FaList, FaTrash } from "react-icons/fa";
 import { FaMessage } from "react-icons/fa6";
 import { GoGraph } from "react-icons/go";
 import { LuLogOut, LuSettings } from "react-icons/lu";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const date = new Date();
 
@@ -17,25 +17,25 @@ function DashSideNav() {
         <h4>Menu</h4>
         <ul>
           <li>
-            <Link className="active">
+            <NavLink to="/dashboard">
               <FaHome />
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/todos">
               <FaList /> Todos
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/expenses">
               <GoGraph /> Expenses
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="/chats">
               <FaMessage /> Chats
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -43,19 +43,19 @@ function DashSideNav() {
         <h4>General</h4>
         <ul>
           <li>
-            <Link>
+            <NavLink to="">
               <LuLogOut /> Logout
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="">
               <LuSettings /> Settings
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link>
+            <NavLink to="">
               <FaTrash /> Trash
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
