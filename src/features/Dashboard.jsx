@@ -6,6 +6,7 @@ import { RxAvatar, RxCaretUp } from "react-icons/rx";
 import { taskSummaryData } from "../assets/dashboardData";
 import DashTaskSummaryCard from "../components/dashboard/DashTaskSummaryCard";
 import DashTaskMiniView from "../components/dashboard/DashTaskMiniView";
+import Loader from "../layout/Loader";
 
 function Dashboard() {
   return (
@@ -76,6 +77,8 @@ function Dashboard() {
             <h3>Total Time</h3>
           </div>
         </div>
+
+        <Loader />
       </section>
     </DashLayout>
   );
